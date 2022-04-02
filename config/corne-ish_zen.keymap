@@ -17,12 +17,6 @@
 
 / {
         behaviors {
-		meh: behavior_meh {
-			compatible = "zmk,modified-key-press";
-			label = "MEH";
-			#binding-cells = <1>;
-			modifiers = <(MOD_LGUI | MOD_LSFT | MOD_LCTL)>;
-		};
                 td_caps: tap_dance_caps {
                         compatible = "zmk,behavior-tap-dance";
                         label = "TAP_DANCE_CAPS";
@@ -43,10 +37,10 @@
 // |      |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  /  | ENT  |
 //                    | WIN | MEH | CPS |   | SPC | SYM  | NUM |
                         bindings = <
-   &kp ESC &kp Q &kp W       &kp F       &kp P      &kp B      &kp J     &kp L        &kp U        &kp Y       &kp SEMI &kp BSPC
-   &kp TAB &kp A &mt LCTRL R &mt LALT S  &mt LGUI T &kp G      &kp M     &mt RGUI N   &mt RALT E   &mt RCTRL I &kp O    &kp SQT
-   &none   &kp Z &kp X       &kp C       &kp D      &kp V      &kp K     &kp H        &kp COMMA    &kp DOT     &kp FSLH &kp RET
-                             &to _WINDOW &meh       &td_caps   &kp SPACE &sl _SYMBOLS &to _NUMBERS
+   &kp ESC &kp Q &kp W       &kp F       &kp P            &kp B      &kp J     &kp L        &kp U        &kp Y       &kp SEMI &kp BSPC
+   &kp TAB &kp A &mt LCTRL R &mt LALT S  &mt LGUI T       &kp G      &kp M     &mt RGUI N   &mt RALT E   &mt RCTRL I &kp O    &kp SQT
+   &none   &kp Z &kp X       &kp C       &kp D            &kp V      &kp K     &kp H        &kp COMMA    &kp DOT     &kp FSLH &kp RET
+                             &to _WINDOW &kp LC(LS(LGUI)) &td_caps   &kp SPACE &sl _SYMBOLS &to _NUMBERS
                         >;
                 };
 

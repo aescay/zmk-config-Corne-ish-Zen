@@ -21,7 +21,7 @@
 			compatible = "zmk,modified-key-press";
 			label = "MEH";
 			#binding-cells = <1>;
-			modifiers = MOD_GUI | MOD_LSFT | MOD_LCTL;
+			modifiers = <(MOD_GUI | MOD_LSFT | MOD_LCTL)>;
 		};
                 td_caps: tap_dance_caps {
                         compatible = "zmk,behavior-tap-dance";

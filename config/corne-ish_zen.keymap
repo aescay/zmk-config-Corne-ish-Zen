@@ -24,6 +24,15 @@
                         tapping-term-ms = <200>;
                         bindings = <&kp LSHFT>, <&kp CAPS>;
                 };
+                bhm: balanced_homerow_mods {
+                        compatible = "zmk,behavior-hold-tap";
+                        label = "HOMEROW_MODS";
+                        #binding-cells = <2>;
+                        tapping-term-ms = <200>;    // <---[[moderate duration]]
+                        quick-tap-ms = <0>;
+                        flavor = "balanced";
+                        bindings = <&kp>, <&kp>;
+                };
         };
 
         keymap {
@@ -38,7 +47,7 @@
 //                    | WIN | MEH | CPS |   | SPC | SYM  | NUM |
                         bindings = <
    &kp ESC &kp Q &kp W       &kp F       &kp P            &kp B      &kp J     &kp L        &kp U        &kp Y       &kp SEMI &kp BSPC
-   &kp TAB &kp A &mt LCTRL R &mt LALT S  &mt LGUI T       &kp G      &kp M     &mt RGUI N   &mt RALT E   &mt RCTRL I &kp O    &kp SQT
+   &kp TAB &kp A &bhm LCTRL R &bhm LALT S  &bhm LGUI T       &kp G      &kp M     &bhm RGUI N   &bhm RALT E   &bhm RCTRL I &kp O    &kp SQT
    &none   &kp Z &kp X       &kp C       &kp D            &kp V      &kp K     &kp H        &kp COMMA    &kp DOT     &kp FSLH &kp RET
                              &to _WINDOW &kp LC(LS(LGUI)) &td_caps   &kp SPACE &sl _SYMBOLS &to _NUMBERS
                         >;

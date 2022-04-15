@@ -44,12 +44,12 @@
 // |  ESC |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  ;  | BKSP |
 // |  TAB |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  |  '   |
 // |      |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  /  | ENT  |
-//                    | WIN | MEH | CPS |   | SPC | SYM  | NUM |
+//                    | WIN | CPS | BKSP|   | SPC | SYM  | NUM |
                         bindings = <
-   &kp ESC &kp Q &kp W       &kp F       &kp P            &kp B      &kp J     &kp L        &kp U        &kp Y       &kp SEMI &kp BSPC
-   &kp TAB &kp A &bhm LCTRL R &bhm LALT S  &bhm LGUI T       &kp G      &kp M     &bhm RGUI N   &bhm RALT E   &bhm RCTRL I &kp O    &kp SQT
-   &none   &kp Z &kp X       &kp C       &kp D            &kp V      &kp K     &kp H        &kp COMMA    &kp DOT     &kp FSLH &kp RET
-                             &to _WINDOW &kp LC(LS(LGUI)) &td_caps   &kp SPACE &sl _SYMBOLS &to _NUMBERS
+   &kp ESC &kp Q &kp W        &kp F       &kp P       &kp B      &kp J     &kp L        &kp U        &kp Y       &kp SEMI &kp BSPC
+   &kp TAB &kp A &bhm LCTRL R &bhm LALT S &bhm LGUI T &kp G      &kp M     &bhm RGUI N   &bhm RALT E   &bhm RCTRL I &kp O    &kp SQT
+   &none   &kp Z &kp X        &kp C       &kp D       &kp V      &kp K     &kp H        &kp COMMA    &kp DOT     &kp FSLH &kp RET
+                              &to _WINDOW &td_caps    &kp BSPC   &kp SPACE &sl _SYMBOLS &to _NUMBERS
                         >;
                 };
 

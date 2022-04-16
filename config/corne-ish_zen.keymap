@@ -44,7 +44,7 @@
 // |  ESC |  Q  |  W  |  F  |  P  |  B  |   |  J  |  L   |  U  |  Y  |  ;  | BKSP |
 // |  TAB |  A  |  R  |  S  |  T  |  G  |   |  M  |  N   |  E  |  I  |  O  |  '   |
 // |      |  Z  |  X  |  C  |  D  |  V  |   |  K  |  H   |  ,  |  .  |  /  | ENT  |
-//                    | WIN | CPS | BKSP|   | SPC | SYM  | NUM |
+//                    | WIN | BKSP| CPS |   | SPC | SYM  | NUM |
                         bindings = <
    &kp ESC &kp Q &kp W        &kp F       &kp P       &kp B      &kp J     &kp L        &kp U        &kp Y       &kp SEMI &kp BSPC
    &kp TAB &kp A &bhm LCTRL R &bhm LALT S &bhm LGUI T &kp G      &kp M     &bhm RGUI N   &bhm RALT E   &bhm RCTRL I &kp O    &kp SQT
